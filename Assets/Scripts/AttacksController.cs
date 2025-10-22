@@ -71,17 +71,21 @@ public class AttacksController : MonoBehaviour
         if (direction.sqrMagnitude < 0.0001f) direction = transform.forward;
         direction.Normalize();
 
+        // Check if target is defending
+        DefenseController defense = targetRoot.GetComponent<DefenseController>();
+        float knockbackMultiplier = (defense != null) ? defense.GetKnockbackMultiplier() : 1f;
+
         // Try physics-based knockback first
         Rigidbody rb = targetRoot.GetComponent<Rigidbody>();
         if (rb != null && rb.isKinematic == false)
         {
-            Vector3 impulse = direction * knockbackForce + Vector3.up * knockbackUpward;
+            Vector3 impulse = (direction * knockbackForce + Vector3.up * knockbackUpward) * knockbackMultiplier;
             rb.AddForce(impulse, ForceMode.Impulse);
             return;
         }
 
         // Fallback: simple position shove (instant)
-        Vector3 shove = direction * knockbackDistance;
+        Vector3 shove = direction * knockbackDistance * knockbackMultiplier;
         targetRoot.position += shove;
     }
 }
