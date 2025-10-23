@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
 
     public InputActionReference horizontalAction;
     public InputActionReference verticalAction;
-    
+
     [HideInInspector]
     public float inputMultiplier = 1f;
     public bool isFrozen = false;
@@ -18,10 +18,10 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (isFrozen) return;
-        
+
         float horizontal = horizontalAction.action.ReadValue<float>() * inputMultiplier;
         float vertical = verticalAction.action.ReadValue<float>() * inputMultiplier;
-        Vector3 moveDir = new Vector3(horizontal, 0, vertical);        
+        Vector3 moveDir = new Vector3(horizontal, 0, vertical);
         this.transform.position += moveDir.normalized * speed * Time.deltaTime;
         if (moveDir != Vector3.zero)
         {

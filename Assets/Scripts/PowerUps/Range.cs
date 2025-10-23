@@ -9,6 +9,7 @@ public class Range : MonoBehaviour
     public float duration = 10f;
     public Sprite effectSpritePlayer1;
     public Sprite effectSpritePlayer2;
+    public float warningTime = 0.5f;
 
     void OnTriggerEnter(Collider other)
     {
@@ -40,7 +41,15 @@ public class Range : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(duration - warningTime);
+
+        SpriteFlash.SimpleFlash flash = player.GetComponent<SpriteFlash.SimpleFlash>();
+        if (flash != null)
+        {
+            flash.Flash();
+        }
+
+        yield return new WaitForSeconds(warningTime);
 
         stats.attackRange /= multiplier;
 

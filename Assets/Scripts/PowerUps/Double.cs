@@ -7,12 +7,14 @@ public class Double : MonoBehaviour
 
     public float multiplier = 2f;
     public float duration = 5f;
+    public float warningTime = 0.5f;
 
-    void OnTriggerEnter (Collider other)
+
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
-            StartCoroutine( Pickup(other) );
+            StartCoroutine(Pickup(other));
         }
     }
 
@@ -32,7 +34,15 @@ public class Double : MonoBehaviour
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
-        yield return new WaitForSeconds(duration);
+        yield return new WaitForSeconds(duration - warningTime);
+
+        SpriteFlash.SimpleFlash flash = player.GetComponent<SpriteFlash.SimpleFlash>();
+        if (flash != null)
+        {
+            flash.Flash();
+        }
+
+        yield return new WaitForSeconds(warningTime);
 
         player.transform.localScale /= multiplier;
         movements.speed *= multiplier;
@@ -41,6 +51,6 @@ public class Double : MonoBehaviour
         stats.attackCooldown /= multiplier;
 
         Destroy(gameObject);
-    
+
     }
 }
