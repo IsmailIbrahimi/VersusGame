@@ -27,6 +27,9 @@ public class AttacksController : MonoBehaviour
 
     private float _lastAttackTime = -999f;
 
+    [Header("Audio")]
+    public string[] hitSounds = { "Hit1", "Hit2", "Hit3", "Hit4" };
+
     void OnEnable()
     {
         if (attackAction != null) attackAction.action.Enable();
@@ -58,6 +61,13 @@ public class AttacksController : MonoBehaviour
         {
             Vector3 attackDirection = transform.forward;
             SpawnSlashEffect(origin, attackDirection);
+        }
+
+        // Play random hit sound
+        if (hitSounds != null && hitSounds.Length > 0)
+        {
+            int randomIndex = Random.Range(0, hitSounds.Length);
+            FindObjectOfType<AudioManager>().Play(hitSounds[randomIndex]);
         }
 
         if (hits == null || hits.Length == 0) return;

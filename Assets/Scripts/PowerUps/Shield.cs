@@ -37,6 +37,7 @@ public class Shield : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Player picked up Shield! Protected!");
+        FindObjectOfType<AudioManager>().Play("Shield");
 
         PlayerController movements = player.GetComponent<PlayerController>();
         SpriteRenderer playerSprite = player.GetComponent<SpriteRenderer>();

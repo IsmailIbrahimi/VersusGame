@@ -189,6 +189,11 @@ MonoBehaviour:
   knockbackUpward: 1.5
   knockbackDistance: 3
   attackCooldown: 0.25
+  hitSounds:
+  - Hit1
+  - Hit2
+  - Hit3
+  - Hit4
 --- !u!114 &2972774819505276242
 MonoBehaviour:
   m_ObjectHideFlags: 0

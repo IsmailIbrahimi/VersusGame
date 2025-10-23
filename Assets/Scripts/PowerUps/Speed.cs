@@ -41,6 +41,7 @@ public class Speed : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Player picked up Speed!");
+        FindObjectOfType<AudioManager>().Play("Speed");
 
         AttacksController stats = player.GetComponent<AttacksController>();
         PlayerController movements = player.GetComponent<PlayerController>();

@@ -38,6 +38,7 @@ public class Wasabi : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Player picked up Wasabi! Controls inverted!");
+        FindObjectOfType<AudioManager>().Play("Wasabi");
 
         PlayerController movements = player.GetComponent<PlayerController>();
 

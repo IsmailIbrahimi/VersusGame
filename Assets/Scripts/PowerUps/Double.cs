@@ -39,6 +39,7 @@ public class Double : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Player picked up Double!");
+        FindObjectOfType<AudioManager>().Play("Double");
 
         player.transform.localScale *= multiplier;
         AttacksController stats = player.GetComponent<AttacksController>();

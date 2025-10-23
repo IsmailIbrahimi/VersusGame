@@ -40,6 +40,7 @@ public class Freeze : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Player picked up Freeze! Controls Stopped!");
+        FindObjectOfType<AudioManager>().Play("Freeze");
 
         PlayerController movements = player.GetComponent<PlayerController>();
 

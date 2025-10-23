@@ -41,6 +41,7 @@ public class Range : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Player picked up Range!");
+        FindObjectOfType<AudioManager>().Play("Range");
 
         AttacksController stats = player.GetComponent<AttacksController>();
         PlayerController movements = player.GetComponent<PlayerController>();

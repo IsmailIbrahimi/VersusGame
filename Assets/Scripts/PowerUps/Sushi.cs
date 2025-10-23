@@ -40,6 +40,7 @@ public class Sushi : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Player picked up Double!");
+        FindObjectOfType<AudioManager>().Play("Sushi");
 
         AttacksController stats = player.GetComponent<AttacksController>();
 

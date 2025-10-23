@@ -29,6 +29,12 @@ public class PlayerController : MonoBehaviour
             Quaternion targetRotation = Quaternion.Euler(90, targetAngle, 0);
             this.transform.rotation = Quaternion.RotateTowards(this.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
+
+        // Verifier si le joueur est en dessous d'une valeure y
+        if (this.transform.position.y < 4.5f)
+        {
+            FindObjectOfType<AudioManager>().Play("Fall");
+        }
     }
 
 }
