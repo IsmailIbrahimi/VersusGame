@@ -78,6 +78,17 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "",
+                    "id": "f94d2773-42f7-41ea-803f-9a090d5a3ece",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "VerticaAxe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
                     "name": "1D Axis",
                     "id": "9c29b507-8606-4d95-bd1d-81ed89b892a5",
                     "path": "1DAxis",
@@ -112,11 +123,33 @@
                 },
                 {
                     "name": "",
+                    "id": "c67deec1-b565-49d4-ab0d-a35e97007481",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "HorizontalAxe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "3679764b-3078-4c0f-8648-a955ce373463",
                     "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8b60eb2a-42a0-43a3-8781-a91f0af0bea3",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -131,59 +164,22 @@
                     "action": "Defend",
                     "isComposite": false,
                     "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e73d70e1-2694-4742-a485-ff5d6d77e87e",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Defend",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         },
         {
             "name": "Player2",
-            "id": "0a606cf8-7beb-42e9-87c1-4c9584febd3e",
-            "actions": [
-                {
-                    "name": "VerticaAxe",
-                    "type": "Value",
-                    "id": "a7379576-5417-4dcf-9e39-f6ed6441e38b",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                },
-                {
-                    "name": "HorizontalAxe",
-                    "type": "Value",
-                    "id": "bd6a01a5-137d-4c56-b5a4-fad3d58153a4",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": true
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "b717d81d-ff35-4429-894e-2ae4f3d5af86",
-                    "path": "<Gamepad>/leftStick/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "VerticaAxe",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "0a6656ee-9203-444f-971f-7140aad6180a",
-                    "path": "<Gamepad>/leftStick/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "HorizontalAxe",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
-            "name": "Player3",
             "id": "b4c917c9-db25-44cf-b5b7-8afff6e6de38",
             "actions": [
                 {
@@ -259,6 +255,17 @@
                 },
                 {
                     "name": "",
+                    "id": "0d251b4e-d2a2-4eac-b5e7-5168715a6e1e",
+                    "path": "<Gamepad>/leftStick/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "VerticaAxe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "2f3b34cc-fbea-4e9e-9a83-66e42208e22f",
                     "path": "<Keyboard>/numpadPeriod",
                     "interactions": "",
@@ -270,11 +277,55 @@
                 },
                 {
                     "name": "",
+                    "id": "0eef1e17-9439-4a3d-b716-81fc27e93b38",
+                    "path": "<XInputController>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Defend",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a2ad35d8-b4c5-4a61-a189-40ac994b3ada",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Defend",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "d8dae64b-b9e5-4b3c-a541-09fa996b4c41",
                     "path": "<Keyboard>/numpad0",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2e57ff16-325f-4088-800d-9efb11f6cf88",
+                    "path": "<XInputController>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8649244b-4e31-4840-af51-7466b8dfdc58",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
                     "action": "Attack",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -311,6 +362,17 @@
                     "action": "HorizontalAxe",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "98b124e6-0579-448f-97b2-85254e1198b8",
+                    "path": "<Gamepad>/leftStick/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad",
+                    "action": "HorizontalAxe",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }
