@@ -592,6 +592,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   targetTag: Player1
+  slashPrefab: {fileID: 0}
+  slashDuration: 0.3
   knockbackForce: 12
   knockbackUpward: 1.5
   knockbackDistance: 3

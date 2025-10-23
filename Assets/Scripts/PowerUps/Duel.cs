@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Sushi : MonoBehaviour
+public class Duel : MonoBehaviour
 {
-
-    public float multiplier = 5f;
     public float duration = 5f;
     public Sprite effectSpritePlayer1;
     public Sprite effectSpritePlayer2;
@@ -39,9 +37,7 @@ public class Sushi : MonoBehaviour
 
     IEnumerator Pickup(Collider player)
     {
-        Debug.Log("Player picked up Double!");
-
-        AttacksController stats = player.GetComponent<AttacksController>();
+        Debug.Log("Player picked up Duel! Controls Swapped!");
 
         SpriteRenderer playerSprite = player.GetComponent<SpriteRenderer>();
         Sprite originalSprite = playerSprite.sprite;
@@ -55,8 +51,6 @@ public class Sushi : MonoBehaviour
             playerSprite.sprite = effectSpritePlayer2;
         }
 
-        stats.knockbackForce *= multiplier;
-
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
@@ -69,11 +63,9 @@ public class Sushi : MonoBehaviour
         }
 
         yield return new WaitForSeconds(warningTime);
-        stats.knockbackForce /= multiplier;
 
         playerSprite.sprite = originalSprite;
 
         Destroy(gameObject);
-
     }
 }
