@@ -112,19 +112,8 @@
                 },
                 {
                     "name": "",
-                    "id": "1231a54e-ff31-4e4a-90cd-638821a88b74",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "3679764b-3078-4c0f-8648-a955ce373463",
-                    "path": "<Keyboard>/q",
+                    "path": "<Keyboard>/c",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -134,19 +123,8 @@
                 },
                 {
                     "name": "",
-                    "id": "ce07ced5-ea24-49ee-9b18-70eda2d280da",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Defend",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "ef2ccd17-f771-4725-8a37-f91bf6830e10",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/v",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
@@ -218,6 +196,24 @@
                     "initialStateCheck": true
                 },
                 {
+                    "name": "Defend",
+                    "type": "Button",
+                    "id": "836cd920-e690-4b7c-8d28-66c0af190f15",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Attack",
+                    "type": "Button",
+                    "id": "f1e9cbfc-11a8-41a1-adf2-f2ef1efd8cf8",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
                     "name": "HorizontalAxe",
                     "type": "Value",
                     "id": "54465d5b-4004-46c7-8db3-52679474f90b",
@@ -260,6 +256,28 @@
                     "action": "VerticaAxe",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "2f3b34cc-fbea-4e9e-9a83-66e42208e22f",
+                    "path": "<Keyboard>/numpadPeriod",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Defend",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "d8dae64b-b9e5-4b3c-a541-09fa996b4c41",
+                    "path": "<Keyboard>/numpad0",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Attack",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 },
                 {
                     "name": "1D Axis",
