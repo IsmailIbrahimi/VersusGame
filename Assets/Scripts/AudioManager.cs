@@ -41,18 +41,18 @@ public class AudioManager : MonoBehaviour
         get { return volume * masterVolume; }
     }
 
-    void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(this.gameObject);
-        }
-        else
-        {
-            Destroy(this.gameObject);
-        }
-    }
+    // void Awake()
+    // {
+    //     if (instance == null)
+    //     {
+    //         instance = this;
+    //         DontDestroyOnLoad(this.gameObject);
+    //     }
+    //     else
+    //     {
+    //         Destroy(this.gameObject);
+    //     }
+    // }
 
     public AudioClip GetAudioClip(AudioType audioType, AudioSourceType sourceType)
     {
