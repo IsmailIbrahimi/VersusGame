@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2726803060664424711}
   - component: {fileID: 3310122800990335581}
   - component: {fileID: 2718852219689956143}
+  - component: {fileID: -5437809354554032110}
+  - component: {fileID: 3482943818113507197}
   m_Layer: 0
   m_Name: Double
   m_TagString: Untagged
@@ -104,6 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baed1add0efdda44ab425549a98aae1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Double
+  multiplier: 2
+  duration: 5
 --- !u!135 &2718852219689956143
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -124,4 +128,52 @@ SphereCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 1.2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &-5437809354554032110
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473964782569965955}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!65 &3482943818113507197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7473964782569965955}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.78, y: 3.1800005, z: 0.20000003}
   m_Center: {x: 0, y: 0, z: 0}

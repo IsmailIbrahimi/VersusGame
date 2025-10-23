@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 5752001977534748373}
   - component: {fileID: 1131023554718610869}
   - component: {fileID: 7900998420411200620}
+  - component: {fileID: -4184072918514195400}
+  - component: {fileID: 6464488316463744066}
   m_Layer: 0
   m_Name: Sumo2
   m_TagString: Player2
@@ -183,6 +185,8 @@ MonoBehaviour:
   rotationSpeed: 720
   horizontalAction: {fileID: -1248393578965111583, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   verticalAction: {fileID: -2385838707973733959, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  inputMultiplier: 1
+  isFrozen: 0
 --- !u!114 &1131023554718610869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,3 +216,34 @@ MonoBehaviour:
   maxLives: 3
   currentLives: 3
   respawnPoint: {fileID: 0}
+--- !u!114 &-4184072918514195400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6564466240246531110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88a6a87b617bee5478c9e45a0148923c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BarthaSzabolcs.Tutorial_SpriteFlash.SimpleFlash
+  flashMaterial: {fileID: 2100000, guid: 739201a62c13e6246a170a0f0b8d69df, type: 2}
+  duration: 0.05
+  flashSprite: {fileID: -641175263, guid: d911f841b4be803409353e31a784d270, type: 3}
+  flashCount: 3
+  spriteDisplayDuration: 0.5
+--- !u!114 &6464488316463744066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6564466240246531110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975ad48cae68ed748b8e516020ee8fa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FallingSpriteChanger
+  yThreshold: 4.5
+  fallingSprite: {fileID: 3064461, guid: d911f841b4be803409353e31a784d270, type: 3}

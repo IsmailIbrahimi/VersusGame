@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Range : MonoBehaviour
+public class Speed : MonoBehaviour
 {
 
     public float multiplier = 5f;
-    public float duration = 10f;
+    public float duration = 5f;
     public Sprite effectSpritePlayer1;
     public Sprite effectSpritePlayer2;
 
@@ -20,7 +20,7 @@ public class Range : MonoBehaviour
 
     IEnumerator Pickup(Collider player)
     {
-        Debug.Log("Player picked up Range!");
+        Debug.Log("Player picked up Speed!");
 
         AttacksController stats = player.GetComponent<AttacksController>();
         PlayerController movements = player.GetComponent<PlayerController>();
@@ -37,12 +37,14 @@ public class Range : MonoBehaviour
             playerSprite.sprite = effectSpritePlayer2;
         }
 
+        movements.speed *= multiplier;
+
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
         yield return new WaitForSeconds(duration);
 
-        stats.attackRange /= multiplier;
+        movements.speed /= multiplier;
 
         playerSprite.sprite = originalSprite;
 

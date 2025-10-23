@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using SpriteFlash;
 
 public class AttacksController : MonoBehaviour
 {
@@ -74,6 +75,13 @@ public class AttacksController : MonoBehaviour
         // Check if target is defending
         DefenseController defense = targetRoot.GetComponent<DefenseController>();
         float knockbackMultiplier = (defense != null) ? defense.GetKnockbackMultiplier() : 1f;
+
+        // Trigger flash effect if available
+        SimpleFlash flash = targetRoot.GetComponent<SimpleFlash>();
+        if (flash != null)
+        {
+            flash.Flash();
+        }
 
         // Try physics-based knockback first
         Rigidbody rb = targetRoot.GetComponent<Rigidbody>();

@@ -1,12 +1,9 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Range : MonoBehaviour
+public class Wasabi : MonoBehaviour
 {
-
-    public float multiplier = 5f;
-    public float duration = 10f;
+    public float duration = 5f;
     public Sprite effectSpritePlayer1;
     public Sprite effectSpritePlayer2;
 
@@ -20,9 +17,8 @@ public class Range : MonoBehaviour
 
     IEnumerator Pickup(Collider player)
     {
-        Debug.Log("Player picked up Range!");
+        Debug.Log("Player picked up Wasabi! Controls inverted!");
 
-        AttacksController stats = player.GetComponent<AttacksController>();
         PlayerController movements = player.GetComponent<PlayerController>();
 
         SpriteRenderer playerSprite = player.GetComponent<SpriteRenderer>();
@@ -37,16 +33,18 @@ public class Range : MonoBehaviour
             playerSprite.sprite = effectSpritePlayer2;
         }
 
+        movements.inputMultiplier = -1f;
+
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
 
         yield return new WaitForSeconds(duration);
 
-        stats.attackRange /= multiplier;
+        movements.inputMultiplier = 1f;
+        Debug.Log("Controls back to normal!");
 
         playerSprite.sprite = originalSprite;
 
         Destroy(gameObject);
-
     }
 }
