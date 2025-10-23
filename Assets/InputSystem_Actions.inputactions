@@ -78,17 +78,6 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "",
-                    "id": "f94d2773-42f7-41ea-803f-9a090d5a3ece",
-                    "path": "<Gamepad>/leftStick/y",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "VerticaAxe",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "1D Axis",
                     "id": "9c29b507-8606-4d95-bd1d-81ed89b892a5",
                     "path": "1DAxis",
@@ -123,17 +112,6 @@
                 },
                 {
                     "name": "",
-                    "id": "c67deec1-b565-49d4-ab0d-a35e97007481",
-                    "path": "<Gamepad>/leftStick/x",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "HorizontalAxe",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "3679764b-3078-4c0f-8648-a955ce373463",
                     "path": "<Keyboard>/c",
                     "interactions": "",
@@ -145,33 +123,11 @@
                 },
                 {
                     "name": "",
-                    "id": "8b60eb2a-42a0-43a3-8781-a91f0af0bea3",
-                    "path": "<Gamepad>/buttonWest",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
-                    "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "ef2ccd17-f771-4725-8a37-f91bf6830e10",
                     "path": "<Keyboard>/v",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Defend",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "e73d70e1-2694-4742-a485-ff5d6d77e87e",
-                    "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": ";Gamepad",
                     "action": "Defend",
                     "isComposite": false,
                     "isPartOfComposite": false

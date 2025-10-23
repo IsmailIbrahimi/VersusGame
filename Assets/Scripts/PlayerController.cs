@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerInputManager : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     public float speed = 8;
     public InputActionReference horizontalAction;
