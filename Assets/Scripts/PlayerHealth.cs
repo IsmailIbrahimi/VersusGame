@@ -48,4 +48,14 @@ public class PlayerHealth : MonoBehaviour
             }
         }
     }
+
+    public int GetPlayerHealth()
+    {
+        return currentLives;
+    }
+
+    public int GetTotalHealth()
+    {
+        return maxLives;
+    }
 }
