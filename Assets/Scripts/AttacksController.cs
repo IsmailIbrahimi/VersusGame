@@ -8,7 +8,7 @@ public class AttacksController : MonoBehaviour
 
     [Header("Attack Shape")]
     public Transform attackOrigin;
-    public float attackRange = 2f;
+    public float attackRange = 3f;
     public LayerMask targetLayers;
     public string targetTag = "Enemy";
 

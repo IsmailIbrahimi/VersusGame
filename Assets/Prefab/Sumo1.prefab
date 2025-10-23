@@ -157,6 +157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputManager
   speed: 8
+  rotationSpeed: 720
   horizontalAction: {fileID: -1460133893983715052, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   verticalAction: {fileID: 6090051325540505876, guid: 052faaac586de48259a63d0c4782560b, type: 3}
 --- !u!114 &-2568576008602308656
@@ -173,7 +174,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AttacksController
   attackAction: {fileID: 5434400676544403589, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   attackOrigin: {fileID: 0}
-  attackRange: 2
+  attackRange: 3
   targetLayers:
     serializedVersion: 2
     m_Bits: 0
