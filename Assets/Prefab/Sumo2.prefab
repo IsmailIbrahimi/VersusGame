@@ -12,9 +12,13 @@ GameObject:
   - component: {fileID: 2182720512808722982}
   - component: {fileID: 5120145563736134121}
   - component: {fileID: 9146041947248964696}
+  - component: {fileID: 7244646976565132070}
+  - component: {fileID: 5752001977534748373}
+  - component: {fileID: 1131023554718610869}
+  - component: {fileID: 7900998420411200620}
   m_Layer: 0
   m_Name: Sumo2
-  m_TagString: Untagged
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,7 +84,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: -1968262816, guid: d911f841b4be803409353e31a784d270, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -140,3 +144,70 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 48
   m_CollisionDetection: 0
+--- !u!114 &7244646976565132070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6564466240246531110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce2159e369c0b7f4ba42064703acc33d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AttacksController
+  attackAction: {fileID: 5577347985097040744, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  attackOrigin: {fileID: 6781869369734427982}
+  attackRange: 10
+  targetLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  targetTag: Player1
+  knockbackForce: 12
+  knockbackUpward: 1.5
+  knockbackDistance: 3
+  attackCooldown: 0.25
+--- !u!114 &5752001977534748373
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6564466240246531110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0cbc7a99e56b86469cc39c0e97f1f9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerInputManager
+  speed: 8
+  horizontalAction: {fileID: -1248393578965111583, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  verticalAction: {fileID: -2385838707973733959, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+--- !u!114 &1131023554718610869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6564466240246531110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4d55dd9a4db0454ca5960f5173348bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DefenseController
+  defenseAction: {fileID: 4931911747756046370, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  defenseReduction: 0.15
+--- !u!114 &7900998420411200620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6564466240246531110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1781474b88746f645a6048a53edac4c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  maxLives: 3
+  currentLives: 3
+  respawnPoint: {fileID: 0}
