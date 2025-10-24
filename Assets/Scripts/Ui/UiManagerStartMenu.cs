@@ -68,7 +68,7 @@ public class UiManagerStartMenu : MonoBehaviour
         }
 
         Debug.Log("Starting transition...");
-        levelLoader.transition.SetTrigger("Start");
+        yield return StartCoroutine(levelLoader.PlayTransition());
 
         yield return new WaitForSeconds(levelLoader.transitionTime);
 
@@ -95,7 +95,7 @@ public class UiManagerStartMenu : MonoBehaviour
     IEnumerator LoadArenaWithTransition(string sceneName)
     {
         // Lancer l'animation de transition
-        levelLoader.transition.SetTrigger("Start");
+        yield return StartCoroutine(levelLoader.PlayTransition());
 
         // Attendre la fin de la transition
         yield return new WaitForSeconds(levelLoader.transitionTime);

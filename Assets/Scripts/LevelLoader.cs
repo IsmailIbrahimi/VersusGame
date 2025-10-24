@@ -25,10 +25,16 @@ public class LevelLoader : MonoBehaviour
 
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    public IEnumerator PlayTransition()
     {
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
+        transition.Play("Entry", 0, 0); // Force retour à l'état initial
+    }
+
+    IEnumerator LoadLevel(int levelIndex)
+    {
+        yield return StartCoroutine(PlayTransition());
         SceneManager.LoadScene(levelIndex);
     }
 }
