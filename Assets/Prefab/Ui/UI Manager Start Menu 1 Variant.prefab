@@ -455,6 +455,18 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5370165544669632714, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1411150756653505150}
+    - targetCorrespondingSourceObject: {fileID: 5370165544669632714, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5790393648748631683}
+    - targetCorrespondingSourceObject: {fileID: 5370165544669632714, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2136700464839323786}
+    - targetCorrespondingSourceObject: {fileID: 5370165544669632714, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8904824455593701554}
+    - targetCorrespondingSourceObject: {fileID: 6115889492096485894, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4283978488930546936}
     - targetCorrespondingSourceObject: {fileID: 3878536221200444002, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5441589757932271238}
@@ -506,11 +518,75 @@ MonoBehaviour:
   healthPanel: {fileID: 650720275472061475}
   startMenu: {fileID: 2179951337941416376}
   returnToStartButtonInControls: {fileID: 2252497766035724711}
+--- !u!114 &5790393648748631683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10720494378904436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df7e46cd111c704ca2babd58ad4357e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuSound
+  targetButton: {fileID: 2710858767524041897}
+  audioSource: {fileID: 0}
+  hoverClip: {fileID: 8300000, guid: 60fc2920f1aa8e94b85b045e5582371e, type: 3}
+  clickClip: {fileID: 8300000, guid: 7f569b39890295b4b91c36df0cfb5197, type: 3}
+--- !u!114 &2136700464839323786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10720494378904436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df7e46cd111c704ca2babd58ad4357e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuSound
+  targetButton: {fileID: 7986414296711142873}
+  audioSource: {fileID: 0}
+  hoverClip: {fileID: 8300000, guid: 60fc2920f1aa8e94b85b045e5582371e, type: 3}
+  clickClip: {fileID: 8300000, guid: 7f569b39890295b4b91c36df0cfb5197, type: 3}
+--- !u!114 &8904824455593701554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 10720494378904436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df7e46cd111c704ca2babd58ad4357e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MenuSound
+  targetButton: {fileID: 7161618732476943980}
+  audioSource: {fileID: 0}
+  hoverClip: {fileID: 8300000, guid: 60fc2920f1aa8e94b85b045e5582371e, type: 3}
+  clickClip: {fileID: 8300000, guid: 7f569b39890295b4b91c36df0cfb5197, type: 3}
 --- !u!1 &2179951337941416376 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6115889492096485894, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
   m_PrefabInstance: {fileID: 5377508132800312254}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4283978488930546936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2179951337941416376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9df7e46cd111c704ca2babd58ad4357e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlaySoundOnHoverAndClick
+  targetButton: {fileID: 0}
+  audioSource: {fileID: 0}
+  hoverClip: {fileID: 0}
+  clickClip: {fileID: 0}
 --- !u!224 &2554171090850175257 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7625300282261662375, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
