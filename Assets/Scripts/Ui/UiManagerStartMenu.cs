@@ -53,13 +53,26 @@ public class UiManagerStartMenu : MonoBehaviour
 
     IEnumerator StartGameWithTransition()
     {
-        // Lancer l'animation de transition
+        Debug.Log("StartGameWithTransition called!");
+
+        if (levelLoader == null)
+        {
+            Debug.LogError("LevelLoader is NULL!");
+            yield break;
+        }
+
+        if (levelLoader.transition == null)
+        {
+            Debug.LogError("Transition Animator is NULL!");
+            yield break;
+        }
+
+        Debug.Log("Starting transition...");
         levelLoader.transition.SetTrigger("Start");
 
-        // Attendre la fin de la transition
         yield return new WaitForSeconds(levelLoader.transitionTime);
 
-        // Changer les menus
+        Debug.Log("Transition done, showing menu...");
         startMenu.SetActive(false);
         gameChoices.SetActive(true);
     }
