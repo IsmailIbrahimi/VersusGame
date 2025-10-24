@@ -7,10 +7,13 @@ public class UiManagerStartMenu : MonoBehaviour
     // Start Menu
     public GameObject startMenu;
     public GameObject controlsMenu;
+    public GameObject gameChoices;
     public Button startButton, controlsButtonInStart, exitButton;
+    public Button arena1, arena2, arena3;
 
     // Controls
     public Button returnToStartButtonInControls;
+    public Button returnToStartButtonInArena;
     private ControlsDisplayer cd;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -26,7 +29,9 @@ public class UiManagerStartMenu : MonoBehaviour
         startButton.onClick.AddListener(() => StartGame());
         controlsButtonInStart.onClick.AddListener(() => cd.DisplayControls(startMenu));
         exitButton.onClick.AddListener(() => ExitGame());
-        
+        returnToStartButtonInArena.onClick.AddListener(() => cd.ReturnToStartMenu(gameChoices));
+        arena1.onClick.AddListener(() => loadArena1());
+        arena1.onClick.AddListener(() => loadArena1());
         
     }
 
@@ -38,12 +43,24 @@ public class UiManagerStartMenu : MonoBehaviour
 
     void StartGame()
     {
-        SceneManager.LoadScene("Game");
+        //SceneManager.LoadScene("Game");
+        startMenu.SetActive(!startMenu.activeSelf);
+        gameChoices.SetActive(!gameChoices.activeSelf);
     }
 
     void ExitGame()
     {
         Application.Quit();
+    }
+
+    void loadArena1()
+    {
+
+    }
+    
+    void loadArena2()
+    {
+        
     }
     
 }
