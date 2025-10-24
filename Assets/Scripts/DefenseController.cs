@@ -19,6 +19,15 @@ public class DefenseController : MonoBehaviour
 
     public bool IsDefending => _isDefending;
 
+    void Start()
+    {
+        playerSprite = GetComponent<SpriteRenderer>();
+        if (playerSprite != null)
+        {
+            originalSprite = playerSprite.sprite;
+        }
+    }
+    
     void OnEnable()
     {
         if (defenseAction != null) defenseAction.action.Enable();
