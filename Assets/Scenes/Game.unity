@@ -440,6 +440,11 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &449870792 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 308078482248400942, guid: d8d3c2365f8dc6e4c97853ec03012600, type: 3}
+  m_PrefabInstance: {fileID: 2574394538433721952}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +568,87 @@ MonoBehaviour:
   verticalAction: {fileID: 6090051325540505876, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   inputMultiplier: 1
   isFrozen: 0
+--- !u!1001 &1773237092
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6302607660184440486, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_Name
+      value: UI Manager Game Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 963.4243
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 549.2302
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7177993267851950813, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476065844945432588, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: Sumo1
+      value: 
+      objectReference: {fileID: 1368512553}
+    - target: {fileID: 7476065844945432588, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: Sumo2
+      value: 
+      objectReference: {fileID: 2055354582}
+    - target: {fileID: 7476065844945432588, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: arena
+      value: 
+      objectReference: {fileID: 449870792}
+    - target: {fileID: 7476065844945432588, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: backgroundSky
+      value: 
+      objectReference: {fileID: 356004252}
+    - target: {fileID: 7476065844945432588, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: player1Health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7476065844945432588, guid: 825114871c235a44c873c734de69cd1c, type: 3}
+      propertyPath: player2Health
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 825114871c235a44c873c734de69cd1c, type: 3}
 --- !u!1 &2055354582 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6564466240246531110, guid: 5611f044ce39ad541a6b7902abfcacd8, type: 3}
@@ -1078,3 +1164,4 @@ SceneRoots:
   - {fileID: 8082674695038354284}
   - {fileID: 861406416}
   - {fileID: 230544234}
+  - {fileID: 1773237092}

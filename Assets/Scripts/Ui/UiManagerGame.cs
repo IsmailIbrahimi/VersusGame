@@ -71,8 +71,8 @@ public class UiManager : MonoBehaviour
 
         // Game Over
         restartButton.onClick.AddListener(() => StartGame());
-        
-        
+
+
 
     }
 
@@ -81,8 +81,10 @@ public class UiManager : MonoBehaviour
     {
 
         if (inGame == true)
-        player1Health = player1HealthComponent.currentLives;
-        player2Health = player2HealthComponent.currentLives;
+        {
+            player1Health = player1HealthComponent.currentLives;
+            player2Health = player2HealthComponent.currentLives;
+        }
     }
 
     void StartGame()
@@ -102,6 +104,5 @@ public class UiManager : MonoBehaviour
     }
 
 
-    
 
 }
