@@ -66,8 +66,13 @@ public class UiManager : MonoBehaviour
         StartGame();
         cd = FindFirstObjectByType<ControlsDisplayer>();
 
-        // Game
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.Stop("RoundsTheme"); // Arrêter d'abord au cas où
+            AudioManager.instance.Play("RoundsTheme"); // Puis relancer
+        }
 
+        // Game
         controlsButtonInGame.onClick.AddListener(() => cd.DisplayControls(healthPanel));
 
         // Game Over
@@ -97,6 +102,8 @@ public class UiManager : MonoBehaviour
     void GoToStartMenu()
     {
         SceneManager.LoadScene("StartMenu");
+        FindObjectOfType<AudioManager>().Stop("GameOverMusic");
+
     }
 
     void DisplayHealth()
@@ -112,6 +119,9 @@ public class UiManager : MonoBehaviour
             healthPanel.SetActive(!healthPanel.activeSelf);
             gameOverMenu.SetActive(!gameOverMenu.activeSelf);
 
+            FindObjectOfType<AudioManager>().Stop("RoundsTheme");
+            AudioManager.instance.Play("GameOverMusic");
+
             if (player1Health == 0)
             {
                 player1GameOver.text = $"{player1Name.text}, you lost!";
@@ -126,7 +136,7 @@ public class UiManager : MonoBehaviour
             isFirstTime = false;
         }
     }
-    
+
 
 
 

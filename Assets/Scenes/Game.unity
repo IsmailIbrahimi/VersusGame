@@ -1006,6 +1006,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 7039752176118818368, guid: 67117f66b9ccb7d4ca000aa374aee6c1, type: 3}
+      propertyPath: sounds.Array.size
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039752176118818368, guid: 67117f66b9ccb7d4ca000aa374aee6c1, type: 3}
+      propertyPath: sounds.Array.data[13].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 72853b0ec8d5a1649a136d8935039206, type: 3}
+    - target: {fileID: 7039752176118818368, guid: 67117f66b9ccb7d4ca000aa374aee6c1, type: 3}
+      propertyPath: sounds.Array.data[13].name
+      value: GameOverMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039752176118818368, guid: 67117f66b9ccb7d4ca000aa374aee6c1, type: 3}
+      propertyPath: sounds.Array.data[13].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7039752176118818368, guid: 67117f66b9ccb7d4ca000aa374aee6c1, type: 3}
+      propertyPath: sounds.Array.data[13].volume
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 7364467240416162655, guid: 67117f66b9ccb7d4ca000aa374aee6c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

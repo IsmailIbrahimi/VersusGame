@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8eb8183744bee1479bcb9f7ab72d13d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Range
-  multiplier: 10
+  multiplier: 5
   duration: 5
   effectSpritePlayer1: {fileID: 960361084, guid: d911f841b4be803409353e31a784d270, type: 3}
   effectSpritePlayer2: {fileID: -1519961689, guid: d911f841b4be803409353e31a784d270, type: 3}

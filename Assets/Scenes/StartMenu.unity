@@ -211,6 +211,10 @@ PrefabInstance:
       value: UI Manager Start Menu 1 Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 2136700464839323786, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
+      propertyPath: hoverClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b09901ae7c468d842a4fdb795c0e54e0, type: 3}
+    - target: {fileID: 2136700464839323786, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1946381635}
@@ -255,9 +259,17 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5790393648748631683, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
+      propertyPath: hoverClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b09901ae7c468d842a4fdb795c0e54e0, type: 3}
+    - target: {fileID: 5790393648748631683, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1946381635}
+    - target: {fileID: 8904824455593701554, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
+      propertyPath: hoverClip
+      value: 
+      objectReference: {fileID: 8300000, guid: b09901ae7c468d842a4fdb795c0e54e0, type: 3}
     - target: {fileID: 8904824455593701554, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
       propertyPath: audioSource
       value: 
@@ -437,9 +449,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: b09901ae7c468d842a4fdb795c0e54e0, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -553,7 +565,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -700,7 +712,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7f569b39890295b4b91c36df0cfb5197, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -960,13 +972,13 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2146776562}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: f20cc5adb64902c40996341887ef0506, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 1
   Mute: 0

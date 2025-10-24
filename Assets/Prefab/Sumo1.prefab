@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0cbc7a99e56b86469cc39c0e97f1f9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInputManager
-  speed: 8
+  speed: 6
   rotationSpeed: 720
   horizontalAction: {fileID: -1460133893983715052, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   verticalAction: {fileID: 6090051325540505876, guid: 052faaac586de48259a63d0c4782560b, type: 3}
@@ -188,7 +188,7 @@ MonoBehaviour:
   knockbackForce: 12
   knockbackUpward: 1.5
   knockbackDistance: 3
-  attackCooldown: 0.25
+  attackCooldown: 1
   hitSounds:
   - Hit1
   - Hit2
