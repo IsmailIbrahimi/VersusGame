@@ -13,6 +13,10 @@ public class AttacksController : MonoBehaviour
     public LayerMask targetLayers;
     public string targetTag = "Enemy";
 
+    [Header("Visual Effects")]
+    public GameObject slashPrefab;
+    public float slashDuration = 0.3f;
+
     [Header("Knockback")]
     public float knockbackForce = 12f;
     public float knockbackUpward = 1.5f;
@@ -22,6 +26,9 @@ public class AttacksController : MonoBehaviour
     public float attackCooldown = 0.25f;
 
     private float _lastAttackTime = -999f;
+
+    [Header("Audio")]
+    public string[] hitSounds = { "Hit1", "Hit2", "Hit3", "Hit4" };
 
     void OnEnable()
     {
@@ -50,6 +57,19 @@ public class AttacksController : MonoBehaviour
         Vector3 origin = oriT.position;
         Collider[] hits = Physics.OverlapSphere(origin, attackRange, targetLayers, QueryTriggerInteraction.Collide);
 
+        if (slashPrefab != null)
+        {
+            Vector3 attackDirection = transform.forward;
+            SpawnSlashEffect(origin, attackDirection);
+        }
+
+        // Play random hit sound
+        if (hitSounds != null && hitSounds.Length > 0)
+        {
+            int randomIndex = Random.Range(0, hitSounds.Length);
+            FindObjectOfType<AudioManager>().Play(hitSounds[randomIndex]);
+        }
+
         if (hits == null || hits.Length == 0) return;
 
         foreach (var col in hits)
@@ -69,6 +89,13 @@ public class AttacksController : MonoBehaviour
 
     private void ApplyKnockback(Transform targetRoot, Vector3 direction)
     {
+        ShieldProtection shield = targetRoot.GetComponent<ShieldProtection>();
+        if (shield != null)
+        {
+            Debug.Log(targetRoot.name + " is protected by shield!");
+            return; // L'attaque ne fait rien
+        }
+
         if (direction.sqrMagnitude < 0.0001f) direction = transform.forward;
         direction.Normalize();
 
@@ -95,5 +122,27 @@ public class AttacksController : MonoBehaviour
         // Fallback: simple position shove (instant)
         Vector3 shove = direction * knockbackDistance * knockbackMultiplier;
         targetRoot.position += shove;
+    }
+
+    private void SpawnSlashEffect(Vector3 origin, Vector3 direction)
+    {
+        Vector3 slashPosition = origin;
+        slashPosition.y = transform.position.y;
+
+        // Spawn the slash
+        GameObject slash = Instantiate(slashPrefab, slashPosition, Quaternion.identity);
+
+        if (direction != Vector3.zero)
+        {
+            float angle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
+            slash.transform.rotation = Quaternion.Euler(90, 0, angle);
+        }
+        else
+        {
+            slash.transform.rotation = Quaternion.Euler(90, 0, 0);
+        }
+
+        // Destroy after duration
+        Destroy(slash, slashDuration);
     }
 }

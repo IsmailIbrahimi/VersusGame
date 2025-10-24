@@ -4,9 +4,9 @@ using System.Collections.Generic;
 public class RandomObjectSpawner : MonoBehaviour
 {
     public GameObject[] myObjects;
-    public float spawnInterval = 5f;
+    public float spawnInterval = 15f;
 
-    private float nextSpawnTime = 0f;
+    private float nextSpawnTime = 10f;
     private List<GameObject> shuffledList;
     private int currentIndex = 0;
 

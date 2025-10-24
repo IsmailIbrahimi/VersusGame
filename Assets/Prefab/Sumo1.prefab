@@ -183,10 +183,17 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   targetTag: Enemy
+  slashPrefab: {fileID: 4435225694253023550, guid: 0654ff67799a0b54fb7d2cd4787ca13d, type: 3}
+  slashDuration: 0.3
   knockbackForce: 12
   knockbackUpward: 1.5
   knockbackDistance: 3
   attackCooldown: 0.25
+  hitSounds:
+  - Hit1
+  - Hit2
+  - Hit3
+  - Hit4
 --- !u!114 &2972774819505276242
 MonoBehaviour:
   m_ObjectHideFlags: 0

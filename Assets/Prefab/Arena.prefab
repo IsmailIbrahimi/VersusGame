@@ -308,4 +308,5 @@ MonoBehaviour:
   - {fileID: 7471283674887766362, guid: 58e1f1c45aadb7441a1517d899c608af, type: 3}
   - {fileID: 394513764212789212, guid: 373c8dc80703a9f43a7d7230ceeef12a, type: 3}
   - {fileID: 6071322619258670243, guid: f1476fcb9a2f6dc4c8a485d60d257dec, type: 3}
+  - {fileID: 8909674398957566523, guid: 9a96dfd989bbd0a4a98662f7767c766f, type: 3}
   spawnInterval: 5

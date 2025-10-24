@@ -2,16 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Range : MonoBehaviour
+public class Duel : MonoBehaviour
 {
-
-    public float multiplier = 5f;
-    public float duration = 10f;
+    public float duration = 5f;
     public Sprite effectSpritePlayer1;
     public Sprite effectSpritePlayer2;
     public float warningTime = 0.5f;
     public float lifetimeDuration = 5f;
-
 
     void Start()
     {
@@ -40,11 +37,7 @@ public class Range : MonoBehaviour
 
     IEnumerator Pickup(Collider player)
     {
-        Debug.Log("Player picked up Range!");
-        FindObjectOfType<AudioManager>().Play("Range");
-
-        AttacksController stats = player.GetComponent<AttacksController>();
-        PlayerController movements = player.GetComponent<PlayerController>();
+        Debug.Log("Player picked up Duel! Controls Swapped!");
 
         SpriteRenderer playerSprite = player.GetComponent<SpriteRenderer>();
         Sprite originalSprite = playerSprite.sprite;
@@ -57,8 +50,6 @@ public class Range : MonoBehaviour
         {
             playerSprite.sprite = effectSpritePlayer2;
         }
-
-        stats.attackRange *= multiplier;
 
         GetComponent<SpriteRenderer>().enabled = false;
         GetComponent<Collider>().enabled = false;
@@ -73,11 +64,8 @@ public class Range : MonoBehaviour
 
         yield return new WaitForSeconds(warningTime);
 
-        stats.attackRange /= multiplier;
-
         playerSprite.sprite = originalSprite;
 
         Destroy(gameObject);
-
     }
 }

@@ -10,11 +10,29 @@ public class Sushi : MonoBehaviour
     public Sprite effectSpritePlayer1;
     public Sprite effectSpritePlayer2;
     public float warningTime = 0.5f;
+    public float lifetimeDuration = 5f;
+
+    void Start()
+    {
+        StartCoroutine(DestroyAfterTime());
+    }
+
+    IEnumerator DestroyAfterTime()
+    {
+        yield return new WaitForSeconds(lifetimeDuration);
+
+        if (gameObject != null)
+        {
+            Debug.Log(gameObject.name + " disappeared!");
+            Destroy(gameObject);
+        }
+    }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player1") || other.CompareTag("Player2"))
         {
+            StopAllCoroutines();
             StartCoroutine(Pickup(other));
         }
     }
@@ -22,6 +40,7 @@ public class Sushi : MonoBehaviour
     IEnumerator Pickup(Collider player)
     {
         Debug.Log("Player picked up Double!");
+        FindObjectOfType<AudioManager>().Play("Sushi");
 
         AttacksController stats = player.GetComponent<AttacksController>();
 
