@@ -171,6 +171,11 @@ MonoBehaviour:
   knockbackUpward: 1.5
   knockbackDistance: 3
   attackCooldown: 0.25
+  hitSounds:
+  - Hit1
+  - Hit2
+  - Hit3
+  - Hit4
 --- !u!114 &5752001977534748373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,6 +208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DefenseController
   defenseAction: {fileID: 4931911747756046370, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   defenseReduction: 0.15
+  effectSpritePlayer1: {fileID: -1671348884, guid: d911f841b4be803409353e31a784d270, type: 3}
+  effectSpritePlayer2: {fileID: 817938244, guid: d911f841b4be803409353e31a784d270, type: 3}
 --- !u!114 &7900998420411200620
 MonoBehaviour:
   m_ObjectHideFlags: 0

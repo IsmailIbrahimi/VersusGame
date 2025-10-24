@@ -9,7 +9,13 @@ public class DefenseController : MonoBehaviour
     [Header("Defense Settings")]
     public float defenseReduction = 0.15f;
 
+    [Header("Sprites")]
+    public Sprite effectSpritePlayer1;
+    public Sprite effectSpritePlayer2;
+
     private bool _isDefending = false;
+    private SpriteRenderer playerSprite;
+    private Sprite originalSprite;
 
     public bool IsDefending => _isDefending;
 
@@ -27,8 +33,27 @@ public class DefenseController : MonoBehaviour
     {
         if (defenseAction != null)
         {
-            // Check if defense button is held down
+            bool wasDefending = _isDefending;
             _isDefending = defenseAction.action.IsPressed();
+
+            // Change sprite based on defense state
+            if (_isDefending && !wasDefending)
+            {
+                // Started defending
+                if (CompareTag("Player1"))
+                {
+                    playerSprite.sprite = effectSpritePlayer1;
+                }
+                else if (CompareTag("Player2"))
+                {
+                    playerSprite.sprite = effectSpritePlayer2;
+                }
+            }
+            else if (!_isDefending && wasDefending)
+            {
+                // Stopped defending
+                playerSprite.sprite = originalSprite;
+            }
         }
     }
 

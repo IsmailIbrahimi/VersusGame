@@ -208,6 +208,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DefenseController
   defenseAction: {fileID: -7526656078806120744, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   defenseReduction: 0.15
+  effectSpritePlayer1: {fileID: -1671348884, guid: d911f841b4be803409353e31a784d270, type: 3}
+  effectSpritePlayer2: {fileID: 817938244, guid: d911f841b4be803409353e31a784d270, type: 3}
 --- !u!114 &1511035757034349358
 MonoBehaviour:
   m_ObjectHideFlags: 0
