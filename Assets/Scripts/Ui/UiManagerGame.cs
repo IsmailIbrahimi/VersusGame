@@ -7,17 +7,18 @@ using UnityEngine.UI;
 public class UiManager : MonoBehaviour
 {
     // Game
-    private bool inGame = false;
     public GameObject healthPanel;
     public TMP_Text player1Name;
     public TMP_Text player2Name;
+    public TMP_Text player1GameOver;
+    public TMP_Text player2GameOver;
     private PlayerHealth player1HealthComponent;
     private PlayerHealth player2HealthComponent;
     public TMP_Text player1HealthDisplay;
     public TMP_Text player2HealthDisplay;
-    public int player1Health;
-    public int player2Health;
     public Button controlsButtonInGame;
+
+    private bool isFirstTime = true; // for game over
 
     // Game Visuals
     public GameObject backgroundSky;
@@ -70,7 +71,8 @@ public class UiManager : MonoBehaviour
         controlsButtonInGame.onClick.AddListener(() => cd.DisplayControls(healthPanel));
 
         // Game Over
-        restartButton.onClick.AddListener(() => StartGame());
+        restartButton.onClick.AddListener(() => GoToStartMenu());
+
 
 
 
@@ -80,28 +82,52 @@ public class UiManager : MonoBehaviour
     void Update()
     {
 
-        if (inGame == true)
-        {
-            player1Health = player1HealthComponent.currentLives;
-            player2Health = player2HealthComponent.currentLives;
-        }
+        DisplayHealth();
+
     }
 
     void StartGame()
     {
         player1Name.text = "Player1";
         player2Name.text = "Player2";
-        DisplayHealth();
         healthPanel.SetActive(!healthPanel.activeSelf);
 
     }
 
+    void GoToStartMenu()
+    {
+        SceneManager.LoadScene("StartMenu");
+    }
+
     void DisplayHealth()
     {
+        print($"currentlive of player1: {player1HealthComponent.currentLives}");
+        int player1Health = player1HealthComponent.currentLives;
+        int player2Health = player2HealthComponent.currentLives;
         player1HealthDisplay.text = player1Health.ToString();
         player2HealthDisplay.text = player2Health.ToString();
 
+        if ((player1Health == 0 || player2Health == 0) && isFirstTime == true)
+        {
+            healthPanel.SetActive(!healthPanel.activeSelf);
+            gameOverMenu.SetActive(!gameOverMenu.activeSelf);
+
+            if (player1Health == 0)
+            {
+                player1GameOver.text = $"{player1Name.text}, you lost!";
+                player2GameOver.text = $"{player2Name.text}, you won!";
+            }
+            else
+            {
+                player1GameOver.text = $"{player1Name.text}, you won!";
+                player2GameOver.text = $"{player2Name.text}, you lost!";
+            }
+
+            isFirstTime = false;
+        }
     }
+    
+
 
 
 
