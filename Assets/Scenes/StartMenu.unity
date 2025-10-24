@@ -210,22 +210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Manager Start Menu 1 Variant 1
       objectReference: {fileID: 0}
-    - target: {fileID: 999708485562461624, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1290540295910963489, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2136700464839323786, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1946381635}
-    - target: {fileID: 2179951337941416376, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3804434086593011471, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -266,58 +254,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4595986684950108668, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4595986684950108668, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4595986684950108668, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4595986684950108668, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5790393648748631683, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1946381635}
-    - target: {fileID: 8395746925373542540, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8395746925373542540, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8395746925373542540, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8395746925373542540, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734151410552406841, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734151410552406841, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734151410552406841, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8734151410552406841, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8904824455593701554, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
       propertyPath: audioSource
       value: 
