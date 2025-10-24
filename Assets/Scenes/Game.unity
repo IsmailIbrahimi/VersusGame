@@ -638,11 +638,11 @@ PrefabInstance:
       objectReference: {fileID: 356004252}
     - target: {fileID: 7476065844945432588, guid: 825114871c235a44c873c734de69cd1c, type: 3}
       propertyPath: player1Health
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7476065844945432588, guid: 825114871c235a44c873c734de69cd1c, type: 3}
       propertyPath: player2Health
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
