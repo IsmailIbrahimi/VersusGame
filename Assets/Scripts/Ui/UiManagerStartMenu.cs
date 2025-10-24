@@ -18,9 +18,6 @@ public class UiManagerStartMenu : MonoBehaviour
     public Button returnToStartButtonInArena;
     private ControlsDisplayer cd;
 
-    // Level Loader
-    public LevelLoader levelLoader;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -48,33 +45,8 @@ public class UiManagerStartMenu : MonoBehaviour
 
     void StartGame()
     {
-        StartCoroutine(StartGameWithTransition());
-    }
-
-    IEnumerator StartGameWithTransition()
-    {
-        Debug.Log("StartGameWithTransition called!");
-
-        if (levelLoader == null)
-        {
-            Debug.LogError("LevelLoader is NULL!");
-            yield break;
-        }
-
-        if (levelLoader.transition == null)
-        {
-            Debug.LogError("Transition Animator is NULL!");
-            yield break;
-        }
-
-        Debug.Log("Starting transition...");
-        yield return StartCoroutine(levelLoader.PlayTransition());
-
-        yield return new WaitForSeconds(levelLoader.transitionTime);
-
-        Debug.Log("Transition done, showing menu...");
-        startMenu.SetActive(false);
-        gameChoices.SetActive(true);
+        startMenu.SetActive(!startMenu.activeSelf);
+        gameChoices.SetActive(!gameChoices.activeSelf);
     }
 
     void ExitGame()
@@ -84,24 +56,12 @@ public class UiManagerStartMenu : MonoBehaviour
 
     void loadArena1()
     {
-        StartCoroutine(LoadArenaWithTransition("Game")); // Remplace par le nom exact de ta scène
+        SceneManager.LoadScene("Game");
     }
 
     void loadArena2()
     {
-        StartCoroutine(LoadArenaWithTransition("Game2")); // Remplace par le nom exact de ta scène
-    }
-
-    IEnumerator LoadArenaWithTransition(string sceneName)
-    {
-        // Lancer l'animation de transition
-        yield return StartCoroutine(levelLoader.PlayTransition());
-
-        // Attendre la fin de la transition
-        yield return new WaitForSeconds(levelLoader.transitionTime);
-
-        // Charger la scène
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("Game2");
     }
 
 }
