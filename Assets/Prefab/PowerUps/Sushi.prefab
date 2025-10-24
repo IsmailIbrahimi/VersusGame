@@ -131,6 +131,8 @@ MonoBehaviour:
   duration: 5
   effectSpritePlayer1: {fileID: 1946423589, guid: d911f841b4be803409353e31a784d270, type: 3}
   effectSpritePlayer2: {fileID: -490305287, guid: d911f841b4be803409353e31a784d270, type: 3}
+  warningTime: 0.5
+  lifetimeDuration: 10
 --- !u!54 &6754846464568369376
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -108,6 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Double
   multiplier: 2
   duration: 5
+  warningTime: 0.5
+  lifetimeDuration: 10
 --- !u!135 &2718852219689956143
 SphereCollider:
   m_ObjectHideFlags: 0

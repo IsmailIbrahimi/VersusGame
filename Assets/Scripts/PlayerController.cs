@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool isFrozen = false;
 
     private Rigidbody _rb;
-
+    
     void Start()
     {
         _rb = GetComponent<Rigidbody>();
