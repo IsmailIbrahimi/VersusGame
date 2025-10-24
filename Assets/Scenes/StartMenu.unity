@@ -210,6 +210,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Manager Start Menu 1 Variant 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2136700464839323786, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1946381635}
     - target: {fileID: 3804434086593011471, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -250,6 +254,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5790393648748631683, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1946381635}
+    - target: {fileID: 8904824455593701554, guid: 5a505e926ccfa5a41bde702e1848bb03, type: 3}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 1946381635}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

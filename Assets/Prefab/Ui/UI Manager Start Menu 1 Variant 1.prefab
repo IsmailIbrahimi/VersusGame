@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3158351609062383584
 RectTransform:
   m_ObjectHideFlags: 0
@@ -310,59 +310,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3716964244028272775, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3716964244028272775, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3716964244028272775, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 961.5
       objectReference: {fileID: 0}
     - target: {fileID: 3716964244028272775, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -390.39017
       objectReference: {fileID: 0}
     - target: {fileID: 4477440593368310578, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4477440593368310578, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4477440593368310578, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 961.5
       objectReference: {fileID: 0}
     - target: {fileID: 4477440593368310578, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -200.79672
       objectReference: {fileID: 0}
     - target: {fileID: 5370165544669632714, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_Name
-      value: UI Manager Start Menu 1 Variant
+      value: UI Manager Start Menu 1 Variant 1
       objectReference: {fileID: 0}
     - target: {fileID: 6115889492096485894, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8460159980903230018, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8460159980903230018, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8460159980903230018, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 961.5
       objectReference: {fileID: 0}
     - target: {fileID: 8460159980903230018, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -579.9836
       objectReference: {fileID: 0}
     - target: {fileID: 8805002488702264928, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: healthPanel
@@ -390,11 +390,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9109849122610195633, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1052.795
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9109849122610195633, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 467.04053
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9109849122610195633, guid: 6cdd77711a270424bb456bf7bd126ae2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -497,9 +497,8 @@ MonoBehaviour:
   startButton: {fileID: 7986414296711142873}
   controlsButtonInStart: {fileID: 7161618732476943980}
   exitButton: {fileID: 2710858767524041897}
-  arena1: {fileID: 0}
-  arena2: {fileID: 0}
-  arena3: {fileID: 0}
+  arena1: {fileID: 6438756878877541784}
+  arena2: {fileID: 522691384830139840}
   returnToStartButtonInControls: {fileID: 2252497766035724711}
   returnToStartButtonInArena: {fileID: 6974399082931297508}
 --- !u!114 &1411150756653505150
@@ -739,6 +738,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7123779711592141843, guid: 95d96748676738d4d96ee327458ef8b0, type: 3}
   m_PrefabInstance: {fileID: 7453346767890247324}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &522691384830139840 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6930866579757495132, guid: 95d96748676738d4d96ee327458ef8b0, type: 3}
+  m_PrefabInstance: {fileID: 7453346767890247324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+--- !u!114 &6438756878877541784 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4482370399257897732, guid: 95d96748676738d4d96ee327458ef8b0, type: 3}
+  m_PrefabInstance: {fileID: 7453346767890247324}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!114 &6974399082931297508 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 551005300472771192, guid: 95d96748676738d4d96ee327458ef8b0, type: 3}
